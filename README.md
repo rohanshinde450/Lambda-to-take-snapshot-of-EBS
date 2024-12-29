@@ -7,25 +7,18 @@ In this we are gonna take the snapshots of each and every ebs, no matter their e
 
 ### 1) Search lambda function and create a function.
 
-![Screenshot (63)](https://github.com/user-attachments/assets/db59d524-7632-4fb0-b6e0-639cff5666bd)
-![Screenshot (64)](https://github.com/user-attachments/assets/c076d9df-d974-4a86-ace3-711fead8dea6)
+![Screenshot (73)](https://github.com/user-attachments/assets/0e64788a-7fec-437f-bcd8-bad253452f70)
 
-### 2) ADD Trigger in which case the something happens in S3 like images uploaded in the images folder they will send alert to destination.
+### 2) A Ec2 Lambda Role is created to give full access of Ec2 to Lambda for run the code and take the snapshots of each and every ebs.
 
-![Screenshot (65)](https://github.com/user-attachments/assets/f8002684-c3c3-46e1-b83d-125b9cdb152c)
-![Screenshot (66)](https://github.com/user-attachments/assets/263dd73e-4a28-4409-a4ea-93b84d4abd10)
-![Screenshot (68)](https://github.com/user-attachments/assets/16eb4851-30e6-4538-b24c-ea86e29c0f93)
+![Screenshot (74)](https://github.com/user-attachments/assets/b0a70139-8105-4949-bd6d-a7f11e6ba7fd)
+![Screenshot (75)](https://github.com/user-attachments/assets/0239f2f3-d512-40ff-89a4-39fa9add20cc)
 
-### 3) Adding Destination for the receive alert message as soon as possible.
+### 3) paste the code to write for the take snapshots of ebs and create the test event also deploy the code, if there is an error between deploying the code then add deploying time. 
 
-![Screenshot (69)](https://github.com/user-attachments/assets/60a35e1f-8a24-436b-9b8f-a42070182084)
-![Screenshot (70)](https://github.com/user-attachments/assets/699acd54-c174-4354-afb3-ac71ad556656)
+![Screenshot (76)](https://github.com/user-attachments/assets/15e5fc86-a561-43bf-993a-88eae2e45cf7)
+ 
+### Result:
 
-### 4) Add a images in the images of the S3 bucket.
-
-![Screenshot (72)](https://github.com/user-attachments/assets/ce265615-e666-4367-8136-49734a5bf18d)
-![Screenshot (71)](https://github.com/user-attachments/assets/fef4261e-8c54-4dcb-a0a6-0ab26d29d13a)
-
-## Result: As a image uploaded in the folder alert received in my mailbox.
-
-![Screenshot (79)](https://github.com/user-attachments/assets/f7d3bed1-471b-49c7-83ff-80b77cbdc72d)
+![Screenshot (77)](https://github.com/user-attachments/assets/51776c13-56d4-4b5a-9568-26dcd1aeef24)
+![Screenshot (78)](https://github.com/user-attachments/assets/5f628f0a-1403-4101-921c-678364b71447)
